@@ -1,0 +1,7 @@
+# 01
+# Escolha o tipo de dado mais adequado para cada uma das situações abaixo e caso julgue necessário, explique o motivo da escolha.
+# a) o número de irmãos que você tem: int
+# b) seu conceito nesta aula: float
+# c) a quantidade de minutos de um ano: int
+# d) a idade de uma pessoa: int 
+# e) a média da idade dos estudantes dessa classe: float
