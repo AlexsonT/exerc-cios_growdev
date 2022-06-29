@@ -3,23 +3,23 @@
 import csv
 
 with open('compras.csv', 'r') as csv_file:
-    csv_reader = csv.reader(csv_file)
+    csv_reader = csv.reader(csv_file, delimiter=',')
 
     next(csv_reader)
 
-    datas = []
-    soma = []
+#     datas = []
+#     soma = []
 
-    for line in csv_reader:
-        line[5] = int(line[5])
-        line[4] = int(line[4])
+#     for line in csv_reader:
+#         line[5] = int(line[5])
+#         line[4] = int(line[4])
         
-        if line[5] not in datas:
-            datas.append(line[5])
-            soma.append([line[4], line[5]])
-        else:
-            for i in soma:
-                if i[1] == line[5]:
-                    i[0] += line[4]
+#         if line[5] not in datas:
+#             datas.append(line[5])
+#             soma.append([line[4], line[5]])
+#         else:
+#             for i in soma:
+#                 if i[1] == line[5]:
+#                     i[0] += line[4]
 
-print(max(soma))
+# print(max(soma))
