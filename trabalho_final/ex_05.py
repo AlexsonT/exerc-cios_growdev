@@ -20,4 +20,6 @@ with open('alunos.csv', 'r') as data_file:
 
 mean = (sum(notas) / len(notas))
 
-print(mean)
+print('*'*60)
+print(f'A média das notas dos alunos do 2º ano ficou em: {mean: .2f}.')
+print('*'*60)

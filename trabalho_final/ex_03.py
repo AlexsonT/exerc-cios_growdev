@@ -20,6 +20,7 @@ with open('alunos.csv', 'r') as data_file:
                 reprovaram += 1 
                 if line[7] == 'True':
                     mentoria += 1       
-               
-print(reprovaram)  
-print(mentoria)
+print('*'*70)               
+print(f'Do 3º ano tivemos {reprovaram} alunos reprovados.')  
+print(f'Deste total, tivemos {mentoria} alunos que procuraram a mentoria da escola.')
+print('*'*70) 

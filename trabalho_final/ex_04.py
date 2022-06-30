@@ -18,13 +18,15 @@ with open('alunos.csv', 'r') as data_file:
         
         if line[5] > 15:
             falta += 1
-        if line[6] > 0.0 and line[6] <= 5.0:
-            if line[5] <= 15:
+        if line[5] <= 15:
+            if line[6] > 0 and line[6] <= 5:
                 nota += 1 
         if line[5] > 15:
-            if line[6] > 0.0 and line[6] <= 5.0:
+            if line[6] > 0 and line[6] <= 5:
                 ambas += 1             
-  
-print(falta)
-print(nota)
-print(ambas)
+print('*'*50)
+print(f'Tivemos {falta} alunos reprovados por falta.')
+print(f'Tivemos {nota} alunos reprovados por nota.')
+print('.'*50)
+print(f'Tivemos {ambas} reprovados em ambos os critérios.')
+print('*'*50)

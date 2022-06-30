@@ -18,7 +18,12 @@ with open('alunos.csv', 'r') as data_file:
             for i in repeticoes:
                 if i[1] == line[2]:
                     i[0] += 1 
+print('*'*76)
+for e in repeticoes:
+    repeticoes.sort()
+    print(f'A escola {e[1]} tem {e[0]} alunos.')    
+print('*'*76)
 
-repeticoes.sort()
-print(repeticoes)                            
-print(max(repeticoes))
+print(f'A escola {e[1]} tem o maior número de alunos com {e[0]} matrículados.')             
+print('*'*76) 
+

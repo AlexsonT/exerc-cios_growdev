@@ -14,5 +14,6 @@ with open('alunos.csv', 'r') as data_file:
         line[6] = float(line[6]) 
         if line[1] == 1 and line[6] == 0.0:
             repeticoes += 1    
-               
-print(repeticoes)
+print('*'*50)           
+print(f'Tivemos {repeticoes} alunos do 1º ano aprovados sem exame.')
+print('*'*50)  
