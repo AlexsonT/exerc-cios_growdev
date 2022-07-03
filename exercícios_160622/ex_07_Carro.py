@@ -11,11 +11,30 @@
 
 class Carro:
 
-    def __init__(self):
+    def __init__(self, consumo_litro, tanque):
+        self.consumo_litro = consumo_litro
+        self.autonomia_atual = tanque
 
-    def consumo(self, coconsumo = 0)    
-        self.consumo = consumo
+    def andar(self, distancia):
+        self.andar = distancia
+        tanque = self.autonomia_atual - self.andar
+        if distancia <= self.autonomia_atual:
+            print(f'O carro percorreu {distancia} km e tem {tanque} km de autonomia')
+        else:
+            print('Distancia maior que autonomia, necessário abastecer.')    
+        
 
+    def obter_gasolina(self):
+        tanque = self.autonomia_atual - self.andar
+        litros = tanque / self.consumo_litro
+        print(f'Você ainda possui{litros: .2f} litros de gasolina.')
+        print(f'Você ainda tem {tanque} km de autonomia')
+               
+    def adicionar_gasolina(self, adicionar_gasolina):
+        self.adicionar_gasolina = adicionar_gasolina
+        self.autonomia_atual += (adicionar_gasolina * self.consumo_litro)  
+        # tanque = adicionar_gasolina * self.consumo_litro
+        
         
 
         
